@@ -442,13 +442,17 @@
         &.is-success,
         &.is-alert {
           a[role='tab'] {
-            padding: 12px 20px 12px 5px;
+            padding: 12px 22px 6px 5px;
           }
         }
       }
 
-      &::before {
-        @include tab-after-off;
+      &:hover {
+        border-bottom: 23px solid $tab-hover-color;
+      }
+
+      &.is-selected {
+        border-bottom: 23px solid $tab-selected-color;
       }
 
       &:not(.separator):hover {
